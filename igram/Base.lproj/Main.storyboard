@@ -114,32 +114,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="153" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iVt-vw-X4G">
-                                <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iVt-vw-X4G">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="153" id="20k-rJ-wa1" customClass="PostTableViewCell" customModule="igram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="153"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="200" id="20k-rJ-wa1" customClass="PostTableViewCell" customModule="igram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="20k-rJ-wa1" id="qzA-8g-ddU">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mj6-Zj-XuW">
-                                                    <rect key="frame" x="0.0" y="126" width="51" height="21"/>
+                                                    <rect key="frame" x="0.0" y="172" width="51" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpv-oq-bel">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpv-oq-bel" customClass="PFImageView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="162" id="Auh-JP-k8p"/>
+                                                        <constraint firstAttribute="width" constant="320" id="fzk-tH-dJV"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="bpv-oq-bel" firstAttribute="leading" secondItem="qzA-8g-ddU" secondAttribute="leadingMargin" constant="-8" id="5vy-DA-Ku8"/>
                                                 <constraint firstItem="Mj6-Zj-XuW" firstAttribute="top" secondItem="bpv-oq-bel" secondAttribute="bottom" constant="4" id="675-4h-kZi"/>
+                                                <constraint firstItem="bpv-oq-bel" firstAttribute="top" secondItem="qzA-8g-ddU" secondAttribute="topMargin" constant="-8" id="IdO-5F-C0a"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bpv-oq-bel" secondAttribute="trailing" constant="-8" id="OLp-Ey-hmJ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Mj6-Zj-XuW" secondAttribute="bottom" constant="2" id="S07-Ah-XkM"/>
                                                 <constraint firstItem="bpv-oq-bel" firstAttribute="top" secondItem="qzA-8g-ddU" secondAttribute="topMargin" constant="-8" id="SMP-59-Ycf"/>
+                                                <constraint firstItem="bpv-oq-bel" firstAttribute="leading" secondItem="qzA-8g-ddU" secondAttribute="leadingMargin" constant="-8" id="yYm-QD-PRu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -149,19 +156,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stz-eT-0DE">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="JzY-60-1WP">
-                                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="F72-Xh-nox">
-                                            <connections>
-                                                <action selector="onSignOut:" destination="Jnq-hG-5vF" id="gFx-xq-ih1"/>
-                                                <segue destination="MDQ-pY-DCC" kind="show" identifier="signoutSegue" id="XdN-4R-FIp"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KY3-hK-hPh">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
@@ -173,12 +167,31 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stz-eT-0DE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Igram Feed" id="JzY-60-1WP">
+                                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="F72-Xh-nox">
+                                            <connections>
+                                                <action selector="onSignOut:" destination="Jnq-hG-5vF" id="gFx-xq-ih1"/>
+                                                <segue destination="MDQ-pY-DCC" kind="show" identifier="signoutSegue" id="XdN-4R-FIp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="signoutButtonBar" destination="F72-Xh-nox" id="nuZ-ix-Mve"/>
                         <outlet property="tableView" destination="iVt-vw-X4G" id="Kss-LD-zfg"/>
+                        <outlet property="uiNavBar" destination="stz-eT-0DE" id="pvm-9A-ctV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KbN-mo-N1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,9 +227,6 @@
                                 <rect key="frame" x="20" y="348" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="postImage:" destination="1xU-J8-eUw" eventType="editingDidEnd" id="OLD-bi-4gg"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIp-Hf-LPT">
                                 <rect key="frame" x="20" y="295" width="89" height="30"/>

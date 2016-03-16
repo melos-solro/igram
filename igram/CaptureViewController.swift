@@ -67,26 +67,6 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     }
     
-    @IBAction func postImage(sender: AnyObject) {
-        
-        let scaledWidth = 800
-        let scaledHeight = 800
-        let newSize = CGSize(width: scaledWidth, height: scaledHeight)
-        
-        let postImage = resize(userImage!, newSize: newSize)
-        
-        Post.postUserImage(postImage, withCaption: captionTextField.text) { (success: Bool, error: NSError?) -> Void in
-            if let error = error {
-                print(error.localizedDescription)
-            } else {
-                self.performSegueWithIdentifier("postImageSegue", sender: nil)
-            }
-        }
-        
-    }
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

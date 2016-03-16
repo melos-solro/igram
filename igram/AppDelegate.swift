@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if PFUser.currentUser() != nil {
             
+            print("User Found")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let navigation = storyboard.instantiateViewControllerWithIdentifier("MainNavigationController") as! UINavigationController
             let vc = storyboard.instantiateViewControllerWithIdentifier("HomeViewController")

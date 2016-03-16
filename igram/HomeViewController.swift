@@ -11,6 +11,10 @@ import Parse
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var signoutButtonBar: UIBarButtonItem!
+    
+    @IBOutlet weak var uiNavBar: UINavigationBar!
+    
     @IBAction func onSignOut(sender: AnyObject) {
         
         PFUser.logOut()
@@ -28,16 +32,25 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 120
+        tableView.estimatedRowHeight = 200
+        tableView.separatorColor = UIColor.blackColor()
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+        tableView.separatorInset = UIEdgeInsetsMake(0,-8,0,0)
+        
+        navigationItem.title = "Igram Feed"
+        navigationItem.leftBarButtonItem = signoutButtonBar
         
         let query = PFQuery(className: "Post")
         query.orderByDescending("createdAt")
         query.limit = 20
+        print("Querying")
         
         // Do any additional setup after loading the view.
         query.findObjectsInBackgroundWithBlock { (posts: [PFObject]?, error: NSError?) -> Void in
             if let posts = posts {
+                print("Posts obtained")
                 self.posts = posts
+                self.tableView.reloadData()
             } else {
                 print(error?.localizedDescription)
             }
