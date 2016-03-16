@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24AA1E9D7694AB8BB0BE7889 /* Pods_igram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEF69C809FD9D86DB163942 /* Pods_igram.framework */; };
+		860914FA1C9943200035032E /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860914F91C9943200035032E /* CaptureViewController.swift */; };
+		861A735D1C990D4D00D6FC66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861A735B1C990D4D00D6FC66 /* Main.storyboard */; };
+		861A735F1C99184700D6FC66 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A735E1C99184700D6FC66 /* HomeViewController.swift */; };
+		861A73611C9930D700D6FC66 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A73601C9930D700D6FC66 /* Post.swift */; };
+		861A73631C99366100D6FC66 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A73621C99366100D6FC66 /* PostTableViewCell.swift */; };
+		86465B0C1C98F6B700C8FDCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86465B0B1C98F6B700C8FDCE /* LoginViewController.swift */; };
 		8675FB331C98E29A0021A95C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8675FB321C98E29A0021A95C /* AppDelegate.swift */; };
-		8675FB351C98E29A0021A95C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8675FB341C98E29A0021A95C /* ViewController.swift */; };
-		8675FB381C98E29A0021A95C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8675FB361C98E29A0021A95C /* Main.storyboard */; };
 		8675FB3A1C98E29A0021A95C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8675FB391C98E29A0021A95C /* Assets.xcassets */; };
 		8675FB3D1C98E29A0021A95C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8675FB3B1C98E29A0021A95C /* LaunchScreen.storyboard */; };
 		8675FB451C98E88E0021A95C /* readme.me in Resources */ = {isa = PBXBuildFile; fileRef = 8675FB441C98E88E0021A95C /* readme.me */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14EFCFA0E9B35D2B5DEE3A99 /* Pods-igram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igram.release.xcconfig"; path = "Pods/Target Support Files/Pods-igram/Pods-igram.release.xcconfig"; sourceTree = "<group>"; };
+		3BEF69C809FD9D86DB163942 /* Pods_igram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_igram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		860914F91C9943200035032E /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		861A735C1C990D4D00D6FC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		861A735E1C99184700D6FC66 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		861A73601C9930D700D6FC66 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		861A73621C99366100D6FC66 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		86465B0B1C98F6B700C8FDCE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8675FB2F1C98E29A0021A95C /* igram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = igram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8675FB321C98E29A0021A95C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8675FB341C98E29A0021A95C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8675FB371C98E29A0021A95C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8675FB391C98E29A0021A95C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8675FB3C1C98E29A0021A95C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8675FB3E1C98E29A0021A95C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8675FB441C98E88E0021A95C /* readme.me */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.me; sourceTree = "<group>"; };
+		C71B87FBD47DE95C899AB245 /* Pods-igram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-igram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-igram/Pods-igram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AA1E9D7694AB8BB0BE7889 /* Pods_igram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A9FBCCF81D3700F3B1EEF3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C71B87FBD47DE95C899AB245 /* Pods-igram.debug.xcconfig */,
+				14EFCFA0E9B35D2B5DEE3A99 /* Pods-igram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52440A85E507353DA61C93E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BEF69C809FD9D86DB163942 /* Pods_igram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8675FB261C98E29A0021A95C = {
 			isa = PBXGroup;
 			children = (
 				8675FB311C98E29A0021A95C /* igram */,
 				8675FB301C98E29A0021A95C /* Products */,
+				4A9FBCCF81D3700F3B1EEF3F /* Pods */,
+				52440A85E507353DA61C93E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,12 +89,16 @@
 			isa = PBXGroup;
 			children = (
 				8675FB321C98E29A0021A95C /* AppDelegate.swift */,
-				8675FB341C98E29A0021A95C /* ViewController.swift */,
-				8675FB361C98E29A0021A95C /* Main.storyboard */,
 				8675FB391C98E29A0021A95C /* Assets.xcassets */,
 				8675FB3B1C98E29A0021A95C /* LaunchScreen.storyboard */,
+				861A735B1C990D4D00D6FC66 /* Main.storyboard */,
 				8675FB3E1C98E29A0021A95C /* Info.plist */,
 				8675FB441C98E88E0021A95C /* readme.me */,
+				86465B0B1C98F6B700C8FDCE /* LoginViewController.swift */,
+				861A735E1C99184700D6FC66 /* HomeViewController.swift */,
+				861A73601C9930D700D6FC66 /* Post.swift */,
+				861A73621C99366100D6FC66 /* PostTableViewCell.swift */,
+				860914F91C9943200035032E /* CaptureViewController.swift */,
 			);
 			path = igram;
 			sourceTree = "<group>";
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8675FB411C98E29A0021A95C /* Build configuration list for PBXNativeTarget "igram" */;
 			buildPhases = (
+				CFEDBD9B14D13D6C41FE7C82 /* Check Pods Manifest.lock */,
 				8675FB2B1C98E29A0021A95C /* Sources */,
 				8675FB2C1C98E29A0021A95C /* Frameworks */,
 				8675FB2D1C98E29A0021A95C /* Resources */,
+				8F1A3ECF76205F114DA2D617 /* Embed Pods Frameworks */,
+				4AF14AC83CC6BC31F1B4EB91 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,30 +166,82 @@
 			files = (
 				8675FB3D1C98E29A0021A95C /* LaunchScreen.storyboard in Resources */,
 				8675FB3A1C98E29A0021A95C /* Assets.xcassets in Resources */,
-				8675FB381C98E29A0021A95C /* Main.storyboard in Resources */,
 				8675FB451C98E88E0021A95C /* readme.me in Resources */,
+				861A735D1C990D4D00D6FC66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AF14AC83CC6BC31F1B4EB91 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-igram/Pods-igram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F1A3ECF76205F114DA2D617 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-igram/Pods-igram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFEDBD9B14D13D6C41FE7C82 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8675FB2B1C98E29A0021A95C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8675FB351C98E29A0021A95C /* ViewController.swift in Sources */,
+				86465B0C1C98F6B700C8FDCE /* LoginViewController.swift in Sources */,
+				860914FA1C9943200035032E /* CaptureViewController.swift in Sources */,
 				8675FB331C98E29A0021A95C /* AppDelegate.swift in Sources */,
+				861A73631C99366100D6FC66 /* PostTableViewCell.swift in Sources */,
+				861A735F1C99184700D6FC66 /* HomeViewController.swift in Sources */,
+				861A73611C9930D700D6FC66 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8675FB361C98E29A0021A95C /* Main.storyboard */ = {
+		861A735B1C990D4D00D6FC66 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8675FB371C98E29A0021A95C /* Base */,
+				861A735C1C990D4D00D6FC66 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -249,6 +340,7 @@
 		};
 		8675FB421C98E29A0021A95C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71B87FBD47DE95C899AB245 /* Pods-igram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = igram/Info.plist;
@@ -260,6 +352,7 @@
 		};
 		8675FB431C98E29A0021A95C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EFCFA0E9B35D2B5DEE3A99 /* Pods-igram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = igram/Info.plist;
@@ -288,6 +381,7 @@
 				8675FB431C98E29A0021A95C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
